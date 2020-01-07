@@ -1,0 +1,15 @@
+package main
+import "fmt"
+func vals() (int, int) {
+	return 3, 7
+}
+func main() {
+	a, b := vals()
+	fmt.Println(a, b)
+	// c := vals()
+	// fmt.Println(c)
+	c, _ := vals()
+	fmt.Println(c)
+	_, d := vals()
+	fmt.Println(d)
+}
